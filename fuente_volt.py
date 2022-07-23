@@ -45,13 +45,13 @@ if __name__ == '__main__':
                 print(f_v.voltios, f_v.nodo_mas, f_v.nodo_menos)
 
         elif opcion == '3':
-            i = int(input('Escriba el indice: '))
+            i = int(input('Escriba el índice: '))
             f_v = session.query(FuenteVoltaje).get(i)
             session.delete(f_v)
             session.commit()
 
         elif opcion == '4':
-            i = int(input('Escriba el indice: '))
+            i = int(input('Escriba el índice: '))
             f_v = session.query(FuenteVoltaje).get(i)
             print(i, f_v.voltios, f_v.nodo_mas, f_v.nodo_menos)
             voltaje = input('Escriba el voltaje: ')
